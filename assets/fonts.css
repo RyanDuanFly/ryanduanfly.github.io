@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/dm-sans-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "STIX Two Text";
+  src: url("./fonts/stix-two-text-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bootstrap Icons";
+  src: url("./fonts/bootstrap-icons.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  vertical-align: -0.1em;
+}
+
+.icon::before {
+  font-family: "Bootstrap Icons", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon.i-envelope::before { content: "\f32f"; }
+.icon.i-file::before { content: "\f38b"; }
+.icon.i-battery::before { content: "\f185"; }
+.icon.i-server::before { content: "\f40f"; }
+.icon.i-wave::before { content: "\f66b"; }
+.icon.i-pin::before { content: "\f3e8"; }
+.icon.i-plus::before { content: "\f4fe"; }
+.icon.i-minus::before { content: "\f2ea"; }
+.icon.i-menu::before { content: "\f479"; }
+.icon.i-close::before { content: "\f62a"; }

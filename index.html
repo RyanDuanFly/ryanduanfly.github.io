@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f35">
+  <meta name="description" content="Rupeng Duan is a Ph.D. student at UCLA researching power electronics for grid-connected battery storage and AI data centers. Browse research projects, publications and academic experience.">
+  <meta property="og:title" content="Rupeng Duan · Power Electronics at UCLA">
+  <meta property="og:description" content="Research on grid-connected energy storage, AI data center power delivery and electric machines.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ryanduanfly.github.io/">
+  <meta property="og:image" content="https://ryanduanfly.github.io/assets/storage-study.webp">
+  <link rel="canonical" href="https://ryanduanfly.github.io/">
+  <title>Rupeng Duan · Power Electronics at UCLA</title>
+  <link rel="icon" href="assets/rd.png" type="image/png">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="container header-inner">
+      <a class="wordmark" href="#about" aria-label="Rupeng Duan, home"><span class="monogram" aria-hidden="true">rd</span><span>Rupeng Duan</span></a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#about" aria-current="location">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#education">Education</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="container">
+      <section id="about" class="hero" aria-labelledby="name">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="accent-rule"></span> UCLA <span class="slash">/</span> PEEC Laboratory</div>
+          <h1 id="name">Rupeng Duan</h1>
+          <p class="role">Ph.D. student in Electrical and Computer Engineering</p>
+          <p class="intro">I study power electronics for grid-connected battery storage and AI data centers. At UCLA’s <a href="https://sites.google.com/umich.edu/xiaofancui/home">Power Electronics and Energy Control Laboratory</a>, I work with <a href="https://www.ioes.ucla.edu/person/xiaofan-cui/">Prof. Xiaofan Cui</a> to model, build, and control power converters.</p>
+          <div class="actions">
+            <a class="button primary" href="mailto:rpduan@ucla.edu"><span class="icon i-envelope" aria-hidden="true"></span>Email me</a>
+            <a class="button secondary" href="assets/Rupeng-Duan-CV.pdf" download="Rupeng-Duan-CV.pdf"><span class="icon i-file" aria-hidden="true"></span>Download CV</a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <img src="assets/storage-study.webp" width="1200" height="900" fetchpriority="high" alt="Concept illustration of a power converter board suspended above a bank of battery cells.">
+          <figcaption><span>Battery-integrated power conversion</span><span>Concept illustration</span></figcaption>
+        </figure>
+      </section>
+      <section id="research" class="research-section" aria-labelledby="research-title">
+        <h2 class="ruled-title" id="research-title">Research areas</h2>
+        <div class="research-grid">
+          <article class="research-card">
+            <div class="topic-icon"><span class="icon i-battery" aria-hidden="true"></span></div>
+            <h3>Grid-connected storage</h3>
+            <p>Partial-power converters that balance second-life batteries in grid-forming storage systems.</p>
+            <a class="project-link" href="#storage-projects" aria-label="View grid-connected storage project">View project <span aria-hidden="true">+</span></a>
+          </article>
+          <article class="research-card">
+            <div class="topic-icon"><span class="icon i-server" aria-hidden="true"></span></div>
+            <h3>AI data center power</h3>
+            <p>Grid-to-chip power delivery, from smoothing GPU load swings to designing rack power supplies.</p>
+            <a class="project-link" href="#datacenter-projects" aria-label="View three AI data center power projects">View 3 projects <span aria-hidden="true">+</span></a>
+          </article>
+          <article class="research-card">
+            <div class="topic-icon"><span class="icon i-wave" aria-hidden="true"></span></div>
+            <h3>Electric machines &amp; drives</h3>
+            <p>Detecting winding and rotor faults from electrical signals and improving torque in motor drives.</p>
+            <a class="project-link" href="#machine-projects" aria-label="View four electric machines and drives projects">View 4 projects <span aria-hidden="true">+</span></a>
+          </article>
+        </div>
+        <div class="project-store">
+          <article id="storage-projects" class="project-detail">
+            <h2>Grid-connected storage</h2>
+            <section><p class="project-date">UCLA · Sep 2024 – Sep 2026</p>
+              <h3>Modular multilevel converters for grid-forming battery storage</h3>
+              <p>I developed a hierarchical battery-balancing architecture for cascaded H-bridge inverters. A statistical design approach increased output power capability by 50% relative to earlier methods.</p>
+              <p>My partial-power interconnect converter reached 99% peak efficiency during active balancing and improved current sharing during low-voltage ride-through. I built a 200 W grid-forming prototype with CAN and LVDS interfaces and demonstrated it at IEEE ECCE 2026.</p>
+            </section>
+          </article>
+          <article id="datacenter-projects" class="project-detail">
+            <h2>AI data center power</h2>
+            <section><p class="project-date">UCLA · Jun 2026 – present</p>
+              <h3>Power smoothing under variable GPU loads</h3>
+              <p>I built an electromagnetic transient model that spans the grid interface through the voltage regulator module. In simulations with time-varying, unbalanced GPU loads, my hybrid battery–supercapacitor buffer reduced power fluctuations by 80% and UPS DC-link voltage oscillations by 96%.</p>
+            </section>
+            <section><p class="project-date">UCLA · Sep 2026 – present</p>
+              <h3>48 V to 12 V resonant conversion</h3>
+              <p>I am designing a 1 kW CLLC resonant converter for a 48 V to 12 V DC transformer prototype.</p>
+            </section>
+            <section><p class="project-date">UCLA · Sep 2026 – present</p>
+              <h3>Power factor correction for rack power supplies</h3>
+              <p>I am designing a 1 kW single-phase totem-pole power factor correction converter for a scaled data center rack power supply.</p>
+            </section>
+          </article>
+          <article id="machine-projects" class="project-detail">
+            <h2>Electric machines &amp; drives</h2>
+            <section><p class="project-date">Zhejiang University · Sep 2022 – Jun 2024</p>
+              <h3>Diagnosing winding faults in dual three-phase machines</h3>
+              <p>I modeled interturn short circuits in permanent magnet synchronous machines using vector space decomposition. My online detection method uses harmonic-subspace currents and voltages to locate a fault without additional sensors, machine parameters, or prior fault data.</p>
+            </section>
+            <section><p class="project-date">Zhejiang University · Nov 2023 – Jun 2024</p>
+              <h3>Torque enhancement with a four-leg inverter</h3>
+              <p>Injecting third-harmonic current through a four-leg inverter increased average torque by 18.5% in a three-phase permanent magnet synchronous machine.</p>
+            </section>
+            <section><p class="project-date">Zhejiang University · Jun 2022 – Jun 2024</p>
+              <h3>Integrated fault diagnosis for electric machines</h3>
+              <p>I used zero-sequence voltage to classify rotor eccentricity and high-frequency injection to detect a single broken rotor bar in an induction motor. I designed a diagnostic board combining a TI C2000 controller and a Cyclone IV FPGA.</p>
+            </section>
+            <section><p class="project-date">Zhejiang University · Sep – Dec 2021</p>
+              <h3>Fault detection in active magnetic bearings</h3>
+              <p>I used parameter identification to detect interturn short circuits in active magnetic bearings.</p>
+            </section>
+          </article>
+        </div>
+      </section>
+    </div>
+    <div class="academic-wrap">
+      <div class="container academic-layout">
+        <aside class="section-menu"><nav aria-label="Academic profile sections">
+          <p class="eyebrow">On this page</p>
+          <a href="#publications">Publications &amp; patents</a><a href="#education">Education</a><a href="#teaching">Teaching &amp; service</a><a href="#honors">Honors &amp; awards</a><a href="#skills">Technical skills</a>
+        </nav></aside>
+        <div class="academic-content">
+          <section id="publications" class="content-section" aria-labelledby="publications-heading">
+  <header class="section-heading">
+    <h2 id="publications-heading">Publications &amp; patents</h2>
+  </header>
+  <div class="publication-filters" role="group" aria-label="Filter publications by type">
+    <button class="filter-button" type="button" data-filter="all" aria-pressed="true" aria-controls="paper-list">All</button>
+    <button class="filter-button" type="button" data-filter="journal" aria-pressed="false" aria-controls="paper-list">Journal articles</button>
+    <button class="filter-button" type="button" data-filter="conference" aria-pressed="false" aria-controls="paper-list">Conference papers</button>
+    <button class="filter-button" type="button" data-filter="patent" aria-pressed="false" aria-controls="paper-list">Patents</button>
+  </div>
+  <ol class="paper-list" id="paper-list">
+    <li class="paper-row" data-type="conference">
+      <span class="paper-year">2026</span>
+      <div class="paper-content">
+        <h3><a href="https://epapers2.org/ecce2026/ESR/session_view.php?session_id=7">PPI: Partial-power interconnect for battery-integrated multilevel converters</a></h3>
+        <p class="paper-authors"><strong>R. Duan</strong>, G. Qian, B. Li, and X. Cui</p>
+        <p class="paper-venue">IEEE Energy Conversion Congress and Exposition (ECCE) · Vancouver, Canada · Oral presentation</p>
+      </div>
+    </li>
+    <li class="paper-row" data-type="journal">
+      <span class="paper-year">2026</span>
+      <div class="paper-content">
+        <h3><a href="https://doi.org/10.1109/JESTPE.2026.3672460">Hierarchical partial power processing of second-life battery-integrated grid-connected multilevel inverters via statistical design</a></h3>
+        <p class="paper-authors"><strong>R. Duan</strong>, X. Sun, and X. Cui</p>
+        <p class="paper-venue">IEEE Journal of Emerging and Selected Topics in Power Electronics · 14(3), 2877–2890</p>
+      </div>
+    </li>
+    <li class="paper-row" data-type="patent">
+      <span class="paper-year">2026</span>
+      <div class="paper-content">
+        <h3><a href="https://patents.google.com/patent/CN116626486A/en">Rotor broken bar fault diagnosis method, device and equipment of cage type asynchronous motor</a></h3>
+        <p class="paper-authors">L. Wu, H. Li, <strong>R. Duan</strong>, et al.</p>
+        <p class="paper-venue">Chinese patent · Granted October 9, 2026 · Application publication CN116626486A</p>
+      </div>
+    </li>
+    <li class="paper-row" data-type="conference">
+      <span class="paper-year">2025</span>
+      <div class="paper-content">
+        <h3><a href="https://doi.org/10.1109/COMPEL57166.2025.11121257">Hierarchical partial power processing for second-life battery-integrated grid-connected multilevel inverters</a></h3>
+        <p class="paper-authors"><strong>R. Duan</strong> and X. Cui</p>
+        <p class="paper-venue">IEEE Workshop on Control and Modeling for Power Electronics (COMPEL) · Knoxville, USA · pp. 1–8</p>
+      </div>
+    </li>
+    <li class="paper-row" data-type="journal">
+      <span class="paper-year">2024</span>
+      <div class="paper-content">
+        <h3><a href="https://doi.org/10.1109/TTE.2024.3366595">Harmonic subspace signature-based detection and localization of interturn short-circuit fault for dual three-phase PMSM with VSD scheme</a></h3>
+        <p class="paper-authors"><strong>R. Duan</strong>, L. Wu, Z. Lyu, H. Zhan, and P. Song</p>
+        <p class="paper-venue">IEEE Transactions on Transportation Electrification · 10(4), 9652–9664</p>
+      </div>
+    </li>
+    <li class="paper-row" data-type="journal">
+      <span class="paper-year">2024</span>
+      <div class="paper-content">
+        <h3><a href="https://doi.org/10.1109/TIA.2024.3428468">Detecting eccentricity fault in permanent magnet synchronous machines by means of zero-sequence voltage component</a></h3>
+        <p class="paper-authors">H. Zhan, L. Wu, Z. Lyu, Y. Du, and <strong>R. Duan</strong></p>
+        <p class="paper-venue">IEEE Transactions on Industry Applications · 60(5), 6761–6774</p>
+      </div>
+    </li>
+    <li class="paper-row" data-type="patent">
+      <span class="paper-year">2023</span>
+      <div class="paper-content">
+        <h3><a href="https://patents.google.com/patent/CN116559725A/en">Method, device and equipment for diagnosing turn-to-turn short circuit of dual three-phase permanent magnet synchronous motor</a></h3>
+        <p class="paper-authors">L. Wu, <strong>R. Duan</strong>, Z. Lyu, et al.</p>
+        <p class="paper-venue">Chinese patent application · CN116559725A · Published August 8, 2023</p>
+      </div>
+    </li>
+    <li class="paper-row" data-type="conference">
+      <span class="paper-year">2023</span>
+      <div class="paper-content">
+        <h3><a href="https://doi.org/10.1109/IEMDC55163.2023.10238903">Detection of inter-turn short circuit fault for dual three-phase PMSM based on vector space decomposition scheme</a></h3>
+        <p class="paper-authors"><strong>R. Duan</strong>, L. Wu, Z. Lyu, H. Zhan, and S. Hu</p>
+        <p class="paper-venue">IEEE International Electric Machines &amp; Drives Conference (IEMDC) · San Francisco, USA · pp. 1–7</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="content-section" id="education" aria-labelledby="education-title">
+  <h2 id="education-title">Education</h2>
+  <ul class="timeline">
+    <li class="timeline-row">
+      <span class="timeline-date">Sep 2024–present</span>
+      <div>
+        <h3>Ph.D. in Electrical and Computer Engineering</h3>
+        <p>University of California, Los Angeles · GPA 3.80/4.00</p>
+        <p>I work with Prof. Xiaofan Cui in the Power Electronics and Energy Control Laboratory.</p>
+        <p>My dissertation is titled <em>Modeling, Design, and Control of Grid-Connected Battery Energy Storage and AI Data Centers</em>.</p>
+      </div>
+    </li>
+    <li class="timeline-row">
+      <span class="timeline-date">Sep 2021–Jun 2024</span>
+      <div>
+        <h3>M.Sc. in Electrical Engineering</h3>
+        <p>Zhejiang University, Hangzhou, China · GPA 4.00/4.00</p>
+      </div>
+    </li>
+    <li class="timeline-row">
+      <span class="timeline-date">Sep 2017–Jun 2021</span>
+      <div>
+        <h3>B.Eng. in Electrical Engineering</h3>
+        <p>Zhejiang University, Hangzhou, China · GPA 3.75/4.00</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="content-section" id="teaching" aria-labelledby="teaching-title">
+  <h2 id="teaching-title">Teaching &amp; service</h2>
+  <h3>Teaching assistant at UCLA</h3>
+  <p>From fall 2025 through spring 2026, I served as a teaching assistant for three courses.</p>
+  <ul>
+    <li>ECE 112 · Introduction to Power Systems</li>
+    <li>ECE 141 · Principles of Feedback Control</li>
+    <li>ECE 111L · Circuits Laboratory II</li>
+  </ul>
+  <p>My median overall TA rating was 8/9 across 189 student ratings.</p>
+  <h3>Peer review &amp; volunteering</h3>
+  <dl class="detail-list">
+    <dt>Journal reviewer</dt>
+    <dd><em>IEEE Transactions on Power Electronics</em>, <em>IEEE Transactions on Industrial Electronics</em>, and <em>IEEE Transactions on Transportation Electrification</em>.</dd>
+    <dt>Conference reviewer</dt>
+    <dd>IEEE ECCE 2026 and IEEE APEC 2027.</dd>
+    <dt>Conference volunteer</dt>
+    <dd>IEEE ECCE 2026.</dd>
+  </dl>
+</section>
+
+<section class="content-section" id="honors" aria-labelledby="honors-title">
+  <h2 id="honors-title">Honors &amp; awards</h2>
+  <dl class="detail-list">
+    <dt>Oct 2026</dt>
+    <dd>Student Attendance Grant, IEEE ECCE.</dd>
+    <dt>Sep 2026</dt>
+    <dd><a href="https://www.typhoon-hil.com/best-paper-award/">Distinguished Paper Award</a>, Typhoon HIL, United States.</dd>
+    <dt>Oct 2023</dt>
+    <dd>Outstanding Graduate Student, Zhejiang University.</dd>
+    <dt>Oct 2022</dt>
+    <dd>Academic Scholarship for Master’s Students, Zhejiang University.</dd>
+    <dt>Sep 2019</dt>
+    <dd>Outstanding Student in Social Service, Zhejiang University.</dd>
+    <dt>Sep 2018</dt>
+    <dd>Outstanding Student in Academics, Zhejiang University.</dd>
+  </dl>
+</section>
+
+<section class="content-section" id="skills" aria-labelledby="skills-title">
+  <h2 id="skills-title">Technical skills</h2>
+  <dl class="detail-list">
+    <dt>Programming</dt>
+    <dd>Python, C/C++, Verilog, and MATLAB.</dd>
+    <dt>Modeling &amp; simulation</dt>
+    <dd>PLECS, MATLAB/Simulink, LTspice, JMAG, and ANSYS.</dd>
+    <dt>Design &amp; development</dt>
+    <dd>Altium Designer, OrCAD, Code Composer Studio, Quartus, and AutoCAD.</dd>
+    <dt>Hardware platforms</dt>
+    <dd>TI C2000 microcontrollers (TMS320F28379D and TMS320F280039C), Cyclone IV EP4CE75F23C8 FPGA, and Typhoon HIL 606.</dd>
+    <dt>Languages</dt>
+    <dd>Chinese (native) and English (proficient).</dd>
+  </dl>
+</section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer><div class="container footer-inner"><span>© 2026 Rupeng Duan</span><a href="mailto:rpduan@ucla.edu">rpduan@ucla.edu</a><a href="#about">Back to top</a></div></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-toolbar"><button type="button" class="close-dialog" aria-label="Close project details">Close <span aria-hidden="true">×</span></button></div>
+    <div class="dialog-content"></div>
+  </dialog>
+</body>
+</html>
