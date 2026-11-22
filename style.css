@@ -58,6 +58,9 @@ main > section > h2, .section-heading { margin-bottom: .8rem; }
 .paper-authors, .paper-venue { font-size: .94rem; line-height: 1.45; }
 .paper-authors { margin-top: .18rem; }
 .paper-venue { color: var(--muted); }
+.paper-award { margin-top: .2rem; font-size: .94rem; }
+.paper-award a { color: #111; font-weight: 700; text-decoration: none; }
+.paper-award a:hover, .paper-award a:focus-visible { text-decoration: underline; }
 .timeline-row, .detail-list { display: grid; grid-template-columns: 10rem minmax(0,1fr); gap: .4rem 1rem; align-items: baseline; }
 .timeline p, #teaching h3 + p, #teaching p + ul, #teaching ul + p, #teaching h3 + dl { margin-top: .25rem; }
 #teaching ul { padding-left: 1.25rem; }
