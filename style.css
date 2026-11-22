@@ -38,10 +38,8 @@ main > section { margin-top: 2rem; }
 main > section > h2, .section-heading { margin-bottom: .8rem; }
 .research-entry { display: grid; grid-template-columns: 10rem minmax(0,1fr); align-items: start; gap: 1.25rem; margin: 1.05rem 0; }
 .research-figure img { display: block; width: 100%; height: 5.5rem; object-fit: contain; }
-.research-figure figcaption { margin-top: .25rem; text-align: center; font-size: .8rem; line-height: 1.4; color: var(--muted); }
 .research-figure > a { display: block; }
 .research-topic { margin: .55rem 0 0; }
-.figure-credit { font-size: .9rem; color: var(--muted); }
 .research-topic summary { cursor: pointer; width: fit-content; max-width: 100%; line-height: 1.6; }
 .research-topic summary::marker { color: #6a727a; font-size: .82em; }
 .research-topic summary strong { font-weight: 600; }

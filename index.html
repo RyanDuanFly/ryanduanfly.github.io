@@ -15,7 +15,7 @@
   <title>Rupeng Duan · Power Electronics at UCLA</title>
   <link rel="icon" href="assets/rd-blue.png" type="image/png">
   <link rel="stylesheet" href="assets/fonts.css?v=academic-profile">
-  <link rel="stylesheet" href="style.css?v=research-figures">
+  <link rel="stylesheet" href="style.css?v=research-topologies">
   <script src="site.js?v=academic-profile" defer></script>
 </head>
 <body>
@@ -44,10 +44,10 @@
       <h2 id="research-title">Research</h2>
       <div class="research-entry">
         <figure class="research-figure">
-          <a href="assets/battery-inverter-ecce-2026.webp" aria-label="View full-size photo of the two-battery inverter prototype">
-            <img src="assets/battery-inverter-ecce-2026.webp" width="940" height="537" alt="Two-battery-unit cascaded H-bridge inverter prototype.">
+          <!-- Source: Duan, Sun and Cui, IEEE JESTPE (2026), Fig. 2(a). -->
+          <a href="assets/grid-storage-topology.png" aria-label="Open the full-size grid-connected battery topology">
+            <img src="assets/grid-storage-topology.png" width="1370" height="665" alt="Two converter layers balance second-life batteries that connect to the grid through cascaded H-bridges and an LCL filter.">
           </a>
-          <figcaption><a href="https://epapers2.org/ecce2026/ESR/session_view.php?session_id=7">ECCE 2026, Fig. 15(b)</a></figcaption>
         </figure>
         <details class="research-topic" id="storage-projects">
           <summary>
@@ -66,10 +66,10 @@
       </div>
       <div class="research-entry">
         <figure class="research-figure">
-          <a href="assets/datacenter-manuscript-fig1c.png" aria-label="View full-size battery–capacitor energy storage diagram">
-            <img src="assets/datacenter-manuscript-fig1c.png" width="1600" height="484" alt="Battery–capacitor buffer separating rack load fluctuations from grid power and splitting current between the battery and supercapacitor.">
+          <!-- Source: Duan, Sarlioglu and Cui, data center UPS manuscript, circuit from Fig. 1(c). -->
+          <a href="assets/datacenter-buffer-topology.png" aria-label="Open the full-size UPS buffer schematic">
+            <img src="assets/datacenter-buffer-topology.png" width="1403" height="999" alt="A battery and supercapacitor feed a controlled current source connected to the UPS DC link between the active front end and inverter.">
           </a>
-          <figcaption>Manuscript, Fig. 1(c)</figcaption>
         </figure>
         <details class="research-topic" id="datacenter-projects">
           <summary>
@@ -81,7 +81,6 @@
               <h3>Power smoothing under variable GPU loads</h3>
               <p class="project-date">UCLA · Jun 2026 – present</p>
               <p>I built an electromagnetic transient model that spans the grid interface through the voltage regulator module. In simulations with time-varying, unbalanced GPU loads, my hybrid battery–supercapacitor buffer reduced power fluctuations by 80% and UPS DC-link voltage oscillations by 96%.</p>
-              <p class="figure-credit">Figure 1(c) is from <cite>A Merged Battery-Capacitor Double-Conversion UPS for Pulsed Power Mitigation in AI Data Centers</cite>, a manuscript by Rupeng Duan, Bulent Sarlioglu, and Xiaofan Cui.</p>
             </section>
             <section>
               <h3>48 V to 12 V resonant conversion</h3>
@@ -98,10 +97,10 @@
       </div>
       <div class="research-entry">
         <figure class="research-figure">
-          <a href="assets/motor-test-bench-tte-2024.webp" aria-label="View full-size photo of the motor fault-diagnosis test bench">
-            <img src="assets/motor-test-bench-tte-2024.webp" width="1105" height="741" alt="Experimental setup with a brake, a dual three-phase permanent magnet motor, a dSPACE controller, and an inverter.">
+          <!-- Source: Duan et al., IEEE TTE (2024), Fig. 2. -->
+          <a href="assets/motor-winding-topology.png" aria-label="Open the full-size motor winding schematic">
+            <img src="assets/motor-winding-topology.png" width="1253" height="684" alt="Equivalent circuit of a dual three-phase motor with an interturn short circuit in phase A.">
           </a>
-          <figcaption><a href="https://doi.org/10.1109/TTE.2024.3366595">IEEE TTE 2024, Fig. 11</a></figcaption>
         </figure>
         <details class="research-topic" id="machine-projects">
           <summary>
@@ -149,7 +148,7 @@
         <li class="paper-row" data-type="conference">
           <span class="paper-year">2026</span>
           <div class="paper-content">
-            <h3><a href="https://epapers2.org/ecce2026/ESR/session_view.php?session_id=7">PPI: Partial-power interconnect for battery-integrated multilevel converters</a></h3>
+            <h3>PPI: Partial-power interconnect for battery-integrated multilevel converters</h3>
             <p class="paper-authors"><strong>R. Duan</strong>, G. Qian, B. Li, and X. Cui</p>
             <p class="paper-venue">IEEE Energy Conversion Congress and Exposition (ECCE) · Vancouver, Canada · Oral presentation</p>
           </div>
@@ -160,7 +159,7 @@
             <h3><a href="https://doi.org/10.1109/JESTPE.2026.3672460">Hierarchical partial power processing of second-life battery-integrated grid-connected multilevel inverters via statistical design</a></h3>
             <p class="paper-authors"><strong>R. Duan</strong>, X. Sun, and X. Cui</p>
             <p class="paper-venue">IEEE Journal of Emerging and Selected Topics in Power Electronics · 14(3), 2877–2890</p>
-            <p class="paper-award"><strong><a href="https://www.typhoon-hil.com/best-paper-award/united-states/">2026 Typhoon HIL Best Paper Award (U.S.), Distinguished Paper</a></strong></p>
+            <p class="paper-award"><strong><a href="https://www.typhoon-hil.com/best-paper-award/united-states/">Recognized in the 2026 Typhoon HIL Best Paper Award competition (U.S.)</a></strong></p>
           </div>
         </li>
         <li class="paper-row" data-type="conference">
