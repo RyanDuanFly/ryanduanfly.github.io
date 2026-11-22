@@ -15,7 +15,7 @@
   <title>Rupeng Duan · Power Electronics at UCLA</title>
   <link rel="icon" href="assets/rd-blue.png" type="image/png">
   <link rel="stylesheet" href="assets/fonts.css?v=academic-profile">
-  <link rel="stylesheet" href="style.css?v=academic-profile">
+  <link rel="stylesheet" href="style.css?v=research-figures">
   <script src="site.js?v=academic-profile" defer></script>
 </head>
 <body>
@@ -42,71 +42,96 @@
 
     <section class="content-section" id="research" aria-labelledby="research-title">
       <h2 id="research-title">Research</h2>
-      <details class="research-topic" id="storage-projects">
-        <summary>
-          <strong>Grid-connected storage.</strong>
-          <span>A 200 W prototype for testing battery balancing in multilevel converters.</span>
-        </summary>
-        <div class="project-notes">
-          <section>
-            <h3>Modular multilevel converters for grid-forming battery storage</h3>
-            <p class="project-date">UCLA · Sep 2024 – Sep 2026</p>
-            <p>I developed a hierarchical battery-balancing architecture for cascaded H-bridge inverters. A statistical design approach increased output power capability by 50% relative to earlier methods.</p>
-            <p>My partial-power interconnect converter reached 99% peak efficiency during active balancing and improved current sharing during low-voltage ride-through. I built a 200 W grid-forming prototype with CAN and LVDS interfaces and demonstrated it at IEEE ECCE 2026.</p>
-          </section>
-        </div>
-      </details>
-      <details class="research-topic" id="datacenter-projects">
-        <summary>
-          <strong>AI data center power.</strong>
-          <span>GPU load fluctuations, hybrid energy storage, and 1 kW rack power converters.</span>
-        </summary>
-        <div class="project-notes">
-          <section>
-            <h3>Power smoothing under variable GPU loads</h3>
-            <p class="project-date">UCLA · Jun 2026 – present</p>
-            <p>I built an electromagnetic transient model that spans the grid interface through the voltage regulator module. In simulations with time-varying, unbalanced GPU loads, my hybrid battery–supercapacitor buffer reduced power fluctuations by 80% and UPS DC-link voltage oscillations by 96%.</p>
-          </section>
-          <section>
-            <h3>48 V to 12 V resonant conversion</h3>
-            <p class="project-date">UCLA · Sep 2026 – present</p>
-            <p>I am designing a 1 kW CLLC resonant converter for a 48 V to 12 V DC transformer prototype.</p>
-          </section>
-          <section>
-            <h3>Power factor correction for rack power supplies</h3>
-            <p class="project-date">UCLA · Sep 2026 – present</p>
-            <p>I am designing a 1 kW single-phase totem-pole power factor correction converter for a scaled data center rack power supply.</p>
-          </section>
-        </div>
-      </details>
-      <details class="research-topic" id="machine-projects">
-        <summary>
-          <strong>Electric machines &amp; drives.</strong>
-          <span>Winding fault detection and torque control in permanent magnet motors.</span>
-        </summary>
-        <div class="project-notes">
-          <section>
-            <h3>Diagnosing winding faults in dual three-phase machines</h3>
-            <p class="project-date">Zhejiang University · Sep 2022 – Jun 2024</p>
-            <p>I modeled interturn short circuits in permanent magnet synchronous machines using vector space decomposition. My online detection method uses harmonic-subspace currents and voltages to locate a fault without additional sensors, machine parameters, or prior fault data.</p>
-          </section>
-          <section>
-            <h3>Torque enhancement with a four-leg inverter</h3>
-            <p class="project-date">Zhejiang University · Nov 2023 – Jun 2024</p>
-            <p>Injecting third-harmonic current through a four-leg inverter increased average torque by 18.5% in a three-phase permanent magnet synchronous machine.</p>
-          </section>
-          <section>
-            <h3>Integrated fault diagnosis for electric machines</h3>
-            <p class="project-date">Zhejiang University · Jun 2022 – Jun 2024</p>
-            <p>I used zero-sequence voltage to classify rotor eccentricity and high-frequency injection to detect a single broken rotor bar in an induction motor. I designed a diagnostic board combining a TI C2000 controller and a Cyclone IV FPGA.</p>
-          </section>
-          <section>
-            <h3>Fault detection in active magnetic bearings</h3>
-            <p class="project-date">Zhejiang University · Sep – Dec 2021</p>
-            <p>I used parameter identification to detect interturn short circuits in active magnetic bearings.</p>
-          </section>
-        </div>
-      </details>
+      <div class="research-entry">
+        <figure class="research-figure">
+          <a href="assets/battery-inverter-ecce-2026.webp" aria-label="View full-size photo of the two-battery inverter prototype">
+            <img src="assets/battery-inverter-ecce-2026.webp" width="940" height="537" alt="Two-battery-unit cascaded H-bridge inverter prototype.">
+          </a>
+          <figcaption><a href="https://epapers2.org/ecce2026/ESR/session_view.php?session_id=7">ECCE 2026, Fig. 15(b)</a></figcaption>
+        </figure>
+        <details class="research-topic" id="storage-projects">
+          <summary>
+            <strong>Grid-connected storage.</strong>
+            <span>Balancing second-life batteries in grid-forming multilevel converters.</span>
+          </summary>
+          <div class="project-notes">
+            <section>
+              <h3>Modular multilevel converters for grid-forming battery storage</h3>
+              <p class="project-date">UCLA · Sep 2024 – Sep 2026</p>
+              <p>I developed a hierarchical battery-balancing architecture for cascaded H-bridge inverters. A statistical design approach increased output power capability by 50% relative to earlier methods.</p>
+              <p>My partial-power interconnect converter reached 99% peak efficiency during active balancing and improved current sharing during low-voltage ride-through. I built a 200 W grid-forming prototype with CAN and LVDS interfaces and demonstrated it at IEEE ECCE 2026.</p>
+            </section>
+          </div>
+        </details>
+      </div>
+      <div class="research-entry">
+        <figure class="research-figure">
+          <a href="assets/datacenter-manuscript-fig1c.png" aria-label="View full-size battery–capacitor energy storage diagram">
+            <img src="assets/datacenter-manuscript-fig1c.png" width="1600" height="484" alt="Battery–capacitor buffer separating rack load fluctuations from grid power and splitting current between the battery and supercapacitor.">
+          </a>
+          <figcaption>Manuscript, Fig. 1(c)</figcaption>
+        </figure>
+        <details class="research-topic" id="datacenter-projects">
+          <summary>
+            <strong>AI data center power.</strong>
+            <span>GPU load fluctuations, hybrid energy storage, and 1 kW rack power converters.</span>
+          </summary>
+          <div class="project-notes">
+            <section>
+              <h3>Power smoothing under variable GPU loads</h3>
+              <p class="project-date">UCLA · Jun 2026 – present</p>
+              <p>I built an electromagnetic transient model that spans the grid interface through the voltage regulator module. In simulations with time-varying, unbalanced GPU loads, my hybrid battery–supercapacitor buffer reduced power fluctuations by 80% and UPS DC-link voltage oscillations by 96%.</p>
+              <p class="figure-credit">Figure 1(c) is from <cite>A Merged Battery-Capacitor Double-Conversion UPS for Pulsed Power Mitigation in AI Data Centers</cite>, a manuscript by Rupeng Duan, Bulent Sarlioglu, and Xiaofan Cui.</p>
+            </section>
+            <section>
+              <h3>48 V to 12 V resonant conversion</h3>
+              <p class="project-date">UCLA · Sep 2026 – present</p>
+              <p>I am designing a 1 kW CLLC resonant converter for a 48 V to 12 V DC transformer prototype.</p>
+            </section>
+            <section>
+              <h3>Power factor correction for rack power supplies</h3>
+              <p class="project-date">UCLA · Sep 2026 – present</p>
+              <p>I am designing a 1 kW single-phase totem-pole power factor correction converter for a scaled data center rack power supply.</p>
+            </section>
+          </div>
+        </details>
+      </div>
+      <div class="research-entry">
+        <figure class="research-figure">
+          <a href="assets/motor-test-bench-tte-2024.webp" aria-label="View full-size photo of the motor fault-diagnosis test bench">
+            <img src="assets/motor-test-bench-tte-2024.webp" width="1105" height="741" alt="Experimental setup with a brake, a dual three-phase permanent magnet motor, a dSPACE controller, and an inverter.">
+          </a>
+          <figcaption><a href="https://doi.org/10.1109/TTE.2024.3366595">IEEE TTE 2024, Fig. 11</a></figcaption>
+        </figure>
+        <details class="research-topic" id="machine-projects">
+          <summary>
+            <strong>Electric machines &amp; drives.</strong>
+            <span>Winding fault detection and torque control in permanent magnet motors.</span>
+          </summary>
+          <div class="project-notes">
+            <section>
+              <h3>Diagnosing winding faults in dual three-phase machines</h3>
+              <p class="project-date">Zhejiang University · Sep 2022 – Jun 2024</p>
+              <p>I modeled interturn short circuits in permanent magnet synchronous machines using vector space decomposition. My online detection method uses harmonic-subspace currents and voltages to locate a fault without additional sensors, machine parameters, or prior fault data.</p>
+            </section>
+            <section>
+              <h3>Torque enhancement with a four-leg inverter</h3>
+              <p class="project-date">Zhejiang University · Nov 2023 – Jun 2024</p>
+              <p>Injecting third-harmonic current through a four-leg inverter increased average torque by 18.5% in a three-phase permanent magnet synchronous machine.</p>
+            </section>
+            <section>
+              <h3>Integrated fault diagnosis for electric machines</h3>
+              <p class="project-date">Zhejiang University · Jun 2022 – Jun 2024</p>
+              <p>I used zero-sequence voltage to classify rotor eccentricity and high-frequency injection to detect a single broken rotor bar in an induction motor. I designed a diagnostic board combining a TI C2000 controller and a Cyclone IV FPGA.</p>
+            </section>
+            <section>
+              <h3>Fault detection in active magnetic bearings</h3>
+              <p class="project-date">Zhejiang University · Sep – Dec 2021</p>
+              <p>I used parameter identification to detect interturn short circuits in active magnetic bearings.</p>
+            </section>
+          </div>
+        </details>
+      </div>
     </section>
 
     <section id="publications" class="content-section" aria-labelledby="publications-heading">
