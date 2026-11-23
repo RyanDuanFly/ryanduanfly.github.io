@@ -29,10 +29,9 @@ a:hover { color: #133d6e; }
 .skip-link:focus { transform: none; }
 .page { --gutter: max(1.25rem, calc((100% - 65rem) / 2)); }
 .profile {
-  --portrait-width: clamp(10.75rem, 17vw, 12.75rem);
-  --portrait-extra: .5rem;
+  --portrait-size: clamp(11.25rem, calc(17vw + .5rem), 13.25rem);
   display: grid;
-  grid-template-columns: minmax(0,1fr) calc(var(--portrait-width) + var(--portrait-extra));
+  grid-template-columns: minmax(0,1fr) var(--portrait-size);
   grid-template-areas: "identity portrait" "bio portrait";
   gap: .85rem clamp(2rem, 4.5vw, 4rem);
   padding: clamp(1.6rem, 3vw, 2.5rem) var(--gutter);
@@ -41,8 +40,9 @@ a:hover { color: #133d6e; }
 .portrait { grid-area: portrait; align-self: center; }
 .portrait a {
   display: block;
-  height: calc(var(--portrait-width) * 1303 / 800);
+  aspect-ratio: 1;
   overflow: hidden;
+  border-radius: 50%;
   box-shadow: 5px 5px 0 #cea96f;
 }
 .portrait img {
@@ -50,11 +50,11 @@ a:hover { color: #133d6e; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 30%;
+  object-position: center top;
   transform: scale(1.11);
   transform-origin: 50% 30%;
 }
-.portrait figcaption { color: var(--muted); font-size: .77rem; line-height: 1.4; margin-top: .7rem; }
+.portrait figcaption { color: var(--muted); font-size: .77rem; line-height: 1.4; text-align: center; margin-top: .7rem; }
 .identity { grid-area: identity; align-self: end; display: flex; align-items: center; flex-wrap: wrap; gap: .45rem 1rem; }
 .energy-note { display: inline-flex; align-items: center; gap: .45rem; max-width: 100%; color: var(--muted); font-size: .84rem; line-height: 1.35; }
 .energy-note span { text-wrap: balance; }
@@ -142,8 +142,7 @@ a:hover { color: #133d6e; }
 @media (max-width: 640px) {
   .page { --gutter: 1.15rem; }
   .profile {
-    --portrait-width: clamp(5.2rem, 20vw, 7.4rem);
-    --portrait-extra: .25rem;
+    --portrait-size: clamp(5.45rem, calc(20vw + .25rem), 7.65rem);
     grid-template-areas: "identity portrait" "bio bio";
     gap: .8rem 1rem;
     padding-block: 1.35rem .8rem;
@@ -160,7 +159,7 @@ a:hover { color: #133d6e; }
 }
 @media (max-width: 440px) {
   .profile {
-    --portrait-width: clamp(4.25rem, 20vw, 5.5rem);
+    --portrait-size: clamp(4.5rem, calc(20vw + .25rem), 5.75rem);
     grid-template-areas: "identity photo" "credit credit" "bio bio";
     gap: .65rem .75rem;
   }
