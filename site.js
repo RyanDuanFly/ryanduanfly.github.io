@@ -19,7 +19,7 @@ if (storageFigures) {
     slides.forEach((slide, slideIndex) => {
       slide.inert = slideIndex !== activeSlide;
     });
-    status.textContent = `${activeSlide + 1} / ${slides.length}`;
+    status.textContent = slides[activeSlide].querySelector("img").alt;
   }
 
   previousButton.addEventListener("click", () => showSlide(activeSlide - 1));
