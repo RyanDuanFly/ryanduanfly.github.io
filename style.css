@@ -15,8 +15,8 @@ body {
 }
 h1, h2, h3, p, figure, ol, ul, dl, dd { margin: 0; }
 h1, h2 { color: #202327; font-weight: 700; }
-h1 { font-size: clamp(2.6rem, 4.5vw, 3.1rem); line-height: 1.06; letter-spacing: -.035em; }
-h2 { font-size: 1.65rem; line-height: 1.25; letter-spacing: -.015em; }
+h1 { font-size: clamp(2.25rem, 3.8vw, 2.7rem); line-height: 1.1; letter-spacing: -.035em; }
+h2 { font-size: 1.5rem; line-height: 1.25; letter-spacing: -.015em; }
 h3 { font-size: 1rem; line-height: 1.45; font-weight: 600; }
 a, summary { color: var(--blue); }
 a { text-decoration-thickness: 1px; text-underline-offset: .17em; }
@@ -28,29 +28,29 @@ a:hover { color: #133d6e; }
 .page { width: min(calc(100% - 3rem), 57rem); margin-inline: auto; padding-bottom: 2rem; }
 .profile {
   display: grid;
-  grid-template-columns: 11.5rem minmax(0,1fr);
+  grid-template-columns: 11rem minmax(0,1fr);
   grid-template-areas: "portrait identity" "portrait bio";
-  gap: .85rem 2.3rem;
-  padding: 2.65rem 0 1.7rem;
+  gap: .65rem 2rem;
+  padding: 2.25rem 0 1.05rem;
 }
 .portrait { grid-area: portrait; align-self: center; }
 .portrait a { display: block; }
 .portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 28%; border-radius: 3px; }
 .portrait figcaption { color: var(--muted); font-size: .8rem; line-height: 1.35; margin-top: .4rem; }
-.identity { grid-area: identity; align-self: end; display: flex; align-items: center; flex-wrap: wrap; gap: .3rem .8rem; }
-.energy-level { display: inline-flex; align-items: center; gap: .3em; color: var(--blue); font-size: .95rem; font-weight: 700; line-height: 1; white-space: nowrap; }
-.energy-level svg { width: 1.75em; height: 1em; }
-.energy-caption { flex-basis: 100%; font-size: .875rem; line-height: 1.4; color: var(--muted); }
+.identity { grid-area: identity; align-self: end; display: flex; align-items: center; flex-wrap: wrap; gap: .45rem 1rem; }
+.energy-note { display: inline-flex; align-items: center; gap: .45rem; max-width: 100%; color: var(--muted); font-size: .84rem; line-height: 1.35; }
+.energy-note span { text-wrap: balance; }
+.energy-battery { flex: none; color: var(--blue); }
 .bio { grid-area: bio; align-self: start; }
-.bio > p { font-size: 1.05rem; line-height: 1.7; }
-.bio p + p { margin-top: .65rem; }
-.contact { display: flex; flex-wrap: wrap; gap: .25rem; list-style: none; padding: 0; margin: .55rem 0 0 -.6875rem; }
+.bio > p { font-size: 1rem; line-height: 1.65; }
+.bio p + p { margin-top: .55rem; }
+.contact { display: flex; flex-wrap: wrap; gap: .125rem; list-style: none; padding: 0; margin: .25rem 0 0 -.6875rem; }
 .contact a { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 4px; }
 .contact a:hover, .contact a:focus-visible { background-color: #eef3f8; }
-.section-links { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 1.5rem; padding: .45rem 1rem; background: #f1f5f9; border-left: 3px solid var(--blue); font-size: .94rem; }
+.section-links { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 1.5rem; padding: .25rem 0 .55rem; border-bottom: 1px solid var(--rule); font-size: .94rem; }
 .section-links a { display: inline-block; padding: .2rem 0; text-decoration: none; }
 .section-links a:hover, .section-links a:focus-visible { text-decoration: underline; }
-main > section { margin-top: 2.15rem; }
+main > section { margin-top: 1.9rem; }
 main > section > h2, .section-heading { margin-bottom: .8rem; }
 .content-section h2 { display: flex; align-items: center; gap: 1rem; }
 .content-section h2::after { content: ""; height: 1px; flex: 1; background: var(--rule); }
@@ -101,13 +101,13 @@ main > section > h2, .section-heading { margin-bottom: .8rem; }
   .profile {
     grid-template-columns: clamp(5rem, 24vw, 8.25rem) minmax(0,1fr);
     grid-template-areas: "portrait identity" "bio bio";
-    gap: .95rem 1.1rem;
-    padding: 1.5rem 0 1.25rem;
+    gap: .8rem 1rem;
+    padding: 1.35rem 0 .65rem;
   }
   .identity { align-self: center; }
   .portrait figcaption { font-size: .75rem; }
   h1 { font-size: clamp(1.9rem, 7vw, 2.45rem); }
-  .section-links { column-gap: .95rem; padding-inline: .7rem; }
+  .section-links { column-gap: .95rem; }
   main > section { margin-top: 1.55rem; }
   .timeline-row, .detail-list { grid-template-columns: 1fr; gap: .1rem; }
   .timeline-row { grid-template-columns: 4rem minmax(0,1fr); grid-template-areas: "mark date" "mark degree"; column-gap: .8rem; }
@@ -116,14 +116,16 @@ main > section > h2, .section-heading { margin-bottom: .8rem; }
   .paper-content { padding-left: .6rem; }
 }
 @media (max-width: 440px) {
-  .profile { grid-template-columns: clamp(3.75rem, 20vw, 5.5rem) minmax(0,1fr); column-gap: .75rem; }
-  .identity { column-gap: .45rem; }
+  .profile {
+    grid-template-columns: clamp(3.75rem, 20vw, 5.5rem) minmax(0,1fr);
+    grid-template-areas: "photo identity" "credit credit" "bio bio";
+    gap: .65rem .75rem;
+  }
+  .portrait { display: contents; }
+  .portrait a { grid-area: photo; }
+  .portrait figcaption { grid-area: credit; margin-top: -.35rem; }
   .identity h1 { font-size: clamp(1.5rem, 7vw, 1.9rem); }
-  .energy-level { font-size: .8rem; }
-}
-@media (max-width: 350px) {
-  .profile { grid-template-columns: 3.5rem minmax(0,1fr); column-gap: .5rem; }
-  .identity { margin-right: -.75rem; column-gap: .2rem; }
+  .section-links { justify-content: space-between; column-gap: .25rem; font-size: clamp(.8125rem, 3.75vw, .94rem); }
 }
 @media print {
   .page { width: 100%; }
