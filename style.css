@@ -35,7 +35,7 @@ a:hover { color: #133d6e; }
 }
 .portrait { grid-area: portrait; align-self: center; }
 .portrait a { display: block; }
-.portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 28%; border-radius: 3px; }
+.portrait img { display: block; width: 100%; height: auto; border-radius: 3px; }
 .portrait figcaption { color: var(--muted); font-size: .8rem; line-height: 1.35; margin-top: .4rem; }
 .identity { grid-area: identity; align-self: end; display: flex; align-items: center; flex-wrap: wrap; gap: .45rem 1rem; }
 .energy-note { display: inline-flex; align-items: center; gap: .45rem; max-width: 100%; color: var(--muted); font-size: .84rem; line-height: 1.35; }
