@@ -92,8 +92,8 @@ a.easyScholarDOI { display: none !important; }
 .research-carousel { position: relative; }
 .research-slide-controls { position: absolute; inset: 0; display: flex; justify-content: space-between; align-items: center; padding-inline: .35rem; pointer-events: none; }
 .research-slide-controls[hidden] { display: none; }
-.research-slide-controls button { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; color: var(--navy); background: rgb(255 255 255 / 65%); border: 0; border-radius: 50%; font: inherit; font-size: 1.25rem; cursor: pointer; pointer-events: auto; }
-.research-slide-controls button:hover, .research-slide-controls button:focus-visible { background: rgb(255 255 255 / 92%); }
+.research-slide-controls button { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; color: var(--navy); background: rgb(218 223 228 / 65%); border: 0; border-radius: 50%; font: inherit; font-size: 1.25rem; cursor: pointer; pointer-events: auto; }
+.research-slide-controls button:hover, .research-slide-controls button:focus-visible { background: rgb(218 223 228 / 92%); }
 .research-slide-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 @media screen {
   .research-carousel .research-slides { grid-auto-flow: column; grid-auto-columns: 100%; gap: 0; overflow: hidden; }
