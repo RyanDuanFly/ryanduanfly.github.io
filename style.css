@@ -37,7 +37,10 @@ a:hover { color: #133d6e; }
 .portrait a { display: block; }
 .portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 28%; border-radius: 3px; }
 .portrait figcaption { color: var(--muted); font-size: .8rem; line-height: 1.35; margin-top: .4rem; }
-.identity { grid-area: identity; align-self: end; }
+.identity { grid-area: identity; align-self: end; display: flex; align-items: center; flex-wrap: wrap; gap: .3rem .8rem; }
+.energy-level { display: inline-flex; align-items: center; gap: .3em; color: var(--blue); font-size: .95rem; font-weight: 700; line-height: 1; white-space: nowrap; }
+.energy-level svg { width: 1.75em; height: 1em; }
+.energy-caption { flex-basis: 100%; font-size: .875rem; line-height: 1.4; color: var(--muted); }
 .bio { grid-area: bio; align-self: start; }
 .bio > p { font-size: 1.05rem; line-height: 1.7; }
 .bio p + p { margin-top: .65rem; }
@@ -111,6 +114,12 @@ main > section > h2, .section-heading { margin-bottom: .8rem; }
   .detail-list dd + dt { margin-top: .5rem; }
   .paper-row { grid-template-columns: 2.35rem minmax(0,1fr); gap: .5rem; }
   .paper-content { padding-left: .6rem; }
+}
+@media (max-width: 440px) {
+  .profile { grid-template-columns: clamp(3.75rem, 20vw, 5.5rem) minmax(0,1fr); column-gap: .75rem; }
+  .identity { column-gap: .45rem; }
+  .identity h1 { font-size: clamp(1.5rem, 7vw, 1.9rem); }
+  .energy-level { font-size: .8rem; }
 }
 @media print {
   .page { width: 100%; }
