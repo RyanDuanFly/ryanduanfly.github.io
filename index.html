@@ -6,16 +6,16 @@
   <meta name="theme-color" content="#193859">
   <meta name="description" content="Rupeng Duan is a Ph.D. student at UCLA researching power electronics for grid-connected battery storage and AI data centers. Browse research projects, publications and academic experience.">
   <meta property="og:title" content="Rupeng Duan · Power Electronics at UCLA">
-  <meta property="og:description" content="Research on grid-connected energy storage, AI data center power delivery and electric machines.">
+  <meta property="og:description" content="Research on grid-connected energy storage and AI data center power delivery.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ryanduanfly.github.io/">
-  <meta property="og:image" content="https://ryanduanfly.github.io/assets/rupeng-duan-portrait.jpg">
-  <meta property="og:image:alt" content="Rupeng Duan with the UCLA battery storage prototype at IEEE ECCE 2026.">
+  <meta property="og:image" content="https://ryanduanfly.github.io/assets/rupeng-duan-beach.jpg">
+  <meta property="og:image:alt" content="Rupeng Duan at the beach.">
   <link rel="canonical" href="https://ryanduanfly.github.io/">
   <title>Rupeng Duan · Power Electronics at UCLA</title>
   <link rel="icon" href="assets/battery.svg" type="image/svg+xml" sizes="any">
   <link rel="stylesheet" href="assets/fonts.css?v=open-sans">
-  <link rel="stylesheet" href="style.css?v=portrait-framing">
+  <link rel="stylesheet" href="style.css?v=beach-portrait">
   <script src="site.js?v=academic-profile" defer></script>
 </head>
 <body>
@@ -23,10 +23,9 @@
   <main id="main" class="page">
     <header id="about" class="profile" aria-labelledby="name">
       <figure class="portrait">
-        <a href="assets/rupeng-duan-portrait.jpg" aria-label="Open the full conference portrait">
-          <img src="assets/rupeng-duan-portrait.jpg" width="800" height="1303" fetchpriority="high" alt="Rupeng Duan with the UCLA battery storage prototype at IEEE ECCE 2026.">
+        <a href="assets/rupeng-duan-beach.jpg" aria-label="Open the full portrait">
+          <img src="assets/rupeng-duan-beach.jpg" width="1800" height="1753" fetchpriority="high" alt="Rupeng Duan at the beach">
         </a>
-        <figcaption>IEEE ECCE 2026, Vancouver</figcaption>
       </figure>
       <div class="identity">
         <h1 id="name">Rupeng Duan</h1>
@@ -41,7 +40,7 @@
       </div>
       <div class="bio">
         <p>Hi! I'm a Ph.D. student in <strong>Electrical and Computer Engineering</strong> at <strong>UCLA</strong>. My research focuses on power electronics for <strong>grid-connected energy storage systems</strong> and <strong>AI data centers</strong>, spanning power converter design and control, hardware prototyping, and power delivery architecture modeling.</p>
-        <p>I am currently working with Prof. Xiaofan Cui in the <a href="https://sites.google.com/umich.edu/xiaofancui/home">Power Electronics and Energy Control Laboratory</a>. Before joining UCLA, I earned my B.S. and M.Sc. degrees in Electrical Engineering from <strong>Zhejiang University</strong>.</p>
+        <p>I am currently working with <a href="https://samueli.ucla.edu/people/xiaofan-cui/">Prof. Xiaofan Cui</a> in the <a href="https://sites.google.com/umich.edu/xiaofancui/home">Power Electronics and Energy Control Laboratory</a>. Before joining UCLA, I earned my B.S. and M.Sc. degrees in Electrical Engineering from <strong>Zhejiang University</strong>.</p>
         <ul class="contact" aria-label="Contact and profiles">
           <li>
             <a href="mailto:rpduan@ucla.edu" aria-label="Email Rupeng Duan at rpduan@ucla.edu" title="Email: rpduan@ucla.edu">
@@ -111,7 +110,7 @@
         <details class="research-topic" id="datacenter-projects">
           <summary>
             <strong>AI Data Center Power Delivery and Power Smoothing</strong>
-            <span>Developing an electromagnetic transient (EMT) model of AI data center power delivery systems, spanning all power conversion stages from the grid interface to the voltage regulator module (VRM), and mitigating AI workload-induced power fluctuations through a hybrid energy buffering. In parallel, designing and building LLC resonant converters and totem-pole PFC rectifiers for a prototype AI data center power delivery platform</span>
+            <span>Developing an electromagnetic transient (EMT) model of AI data center power delivery systems, spanning all power conversion stages from the grid interface to the voltage regulator module, and mitigating AI workload-induced power fluctuations through a hybrid energy buffering. In parallel, designing and building LLC resonant converters and totem-pole PFC rectifiers for a prototype AI data center power delivery platform</span>
           </summary>
           <div class="project-notes">
             <section>
@@ -135,42 +134,6 @@
           <!-- Source: Duan, Sarlioglu and Cui, data center UPS manuscript, circuit from Fig. 1(c). -->
           <a href="assets/datacenter-buffer-topology.png" aria-label="Open the full-size UPS buffer schematic">
             <img src="assets/datacenter-buffer-topology.png" width="1403" height="999" alt="A battery and supercapacitor feed a controlled current source connected to the UPS DC link between the active front end and inverter.">
-          </a>
-        </figure>
-      </div>
-      <div class="research-entry">
-        <details class="research-topic" id="machine-projects">
-          <summary>
-            <strong>Electric Machine Drive and Fault Diagnostic</strong>
-            <span>Developed online methods to detect and locate interturn short circuits in permanent magnet synchronous machines using harmonic-subspace currents and voltages. The work also covered rotor fault diagnosis in permanent magnet and induction motors and torque enhancement through third-harmonic current injection with a four-leg inverter.</span>
-          </summary>
-          <div class="project-notes">
-            <section>
-              <h3>Diagnosing winding faults in dual three-phase machines</h3>
-              <p class="project-date">Zhejiang University · Sep 2022 – Jun 2024</p>
-              <p>I modeled interturn short circuits in permanent magnet synchronous machines using vector space decomposition. My online detection method uses harmonic-subspace currents and voltages to locate a fault without additional sensors, machine parameters, or prior fault data.</p>
-            </section>
-            <section>
-              <h3>Torque enhancement with a four-leg inverter</h3>
-              <p class="project-date">Zhejiang University · Nov 2023 – Jun 2024</p>
-              <p>Injecting third-harmonic current through a four-leg inverter increased average torque by 18.5% in a three-phase permanent magnet synchronous machine.</p>
-            </section>
-            <section>
-              <h3>Integrated fault diagnosis for electric machines</h3>
-              <p class="project-date">Zhejiang University · Jun 2022 – Jun 2024</p>
-              <p>I used zero-sequence voltage to classify rotor eccentricity and high-frequency injection to detect a single broken rotor bar in an induction motor. I designed a diagnostic board combining a TI C2000 controller and a Cyclone IV FPGA.</p>
-            </section>
-            <section>
-              <h3>Fault detection in active magnetic bearings</h3>
-              <p class="project-date">Zhejiang University · Sep – Dec 2021</p>
-              <p>I used parameter identification to detect interturn short circuits in active magnetic bearings.</p>
-            </section>
-          </div>
-        </details>
-        <figure class="research-figure">
-          <!-- Source: Duan et al., IEEE TTE (2024), Fig. 2. -->
-          <a href="assets/motor-winding-topology.png" aria-label="Open the full-size motor winding schematic">
-            <img src="assets/motor-winding-topology.png" width="1253" height="684" alt="Equivalent circuit of a dual three-phase motor with an interturn short circuit in phase A.">
           </a>
         </figure>
       </div>
