@@ -24,6 +24,8 @@ a, summary { color: var(--blue); }
 a { text-decoration-thickness: 1px; text-underline-offset: .17em; }
 a:hover { color: #133d6e; }
 :focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+/* Hide the DOI shortcut that the easyScholar browser extension inserts. */
+a.easyScholarDOI { display: none !important; }
 .skip-link { position: absolute; z-index: 1; top: .25rem; left: .5rem; padding: .35rem .6rem; background: white; transform: translateY(-150%); }
 .skip-link:focus { transform: none; }
 .page { --gutter: max(1.25rem, calc((100% - 65rem) / 2)); }
