@@ -121,6 +121,10 @@ main > section > h2, .section-heading { margin-bottom: .8rem; }
   .identity h1 { font-size: clamp(1.5rem, 7vw, 1.9rem); }
   .energy-level { font-size: .8rem; }
 }
+@media (max-width: 350px) {
+  .profile { grid-template-columns: 3.5rem minmax(0,1fr); column-gap: .5rem; }
+  .identity { margin-right: -.75rem; column-gap: .2rem; }
+}
 @media print {
   .page { width: 100%; }
   .profile { padding-top: 0; }
