@@ -11,10 +11,10 @@ body {
   margin: 0;
   color: var(--text);
   background: #fff;
-  font: 1rem/1.55 "DM Sans", Arial, sans-serif;
+  font: 1rem/1.55 "Open Sans", Arial, sans-serif;
 }
 h1, h2, h3, p, figure, ol, ul, dl, dd { margin: 0; }
-h1, h2 { font-family: "STIX Two Text", Georgia, serif; color: #202327; font-weight: 500; }
+h1, h2 { color: #202327; font-weight: 700; }
 h1 { font-size: clamp(2.6rem, 4.5vw, 3.1rem); line-height: 1.06; letter-spacing: -.035em; }
 h2 { font-size: 1.65rem; line-height: 1.25; letter-spacing: -.015em; }
 h3 { font-size: 1rem; line-height: 1.45; font-weight: 600; }
@@ -39,8 +39,11 @@ a:hover { color: #133d6e; }
 .portrait figcaption { color: var(--muted); font-size: .8rem; line-height: 1.35; margin-top: .4rem; }
 .identity { grid-area: identity; align-self: end; }
 .bio { grid-area: bio; align-self: start; }
+.bio > p { font-size: 1.05rem; line-height: 1.7; }
 .bio p + p { margin-top: .65rem; }
-.contact { display: flex; flex-wrap: wrap; gap: .4rem 1rem; list-style: none; padding: 0; margin-top: .95rem; font-size: .94rem; }
+.contact { display: flex; flex-wrap: wrap; gap: .25rem; list-style: none; padding: 0; margin: .55rem 0 0 -.6875rem; }
+.contact a { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 4px; }
+.contact a:hover, .contact a:focus-visible { background-color: #eef3f8; }
 .section-links { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 1.5rem; padding: .45rem 1rem; background: #f1f5f9; border-left: 3px solid var(--blue); font-size: .94rem; }
 .section-links a { display: inline-block; padding: .2rem 0; text-decoration: none; }
 .section-links a:hover, .section-links a:focus-visible { text-decoration: underline; }
@@ -67,7 +70,7 @@ main > section > h2, .section-heading { margin-bottom: .8rem; }
 #paper-filter { font: inherit; font-size: .875rem; color: var(--muted); background-color: white; border: 1px solid #c2c7cd; border-radius: 2px; padding: .15rem .3rem; }
 .paper-list, .timeline { list-style: none; padding: 0; }
 .paper-row { display: grid; grid-template-columns: 3rem minmax(0,1fr); gap: .75rem; align-items: baseline; }
-.paper-year { color: #314d6d; font: 500 1.12rem/1.3 "STIX Two Text", Georgia, serif; }
+.paper-year { color: #314d6d; font-size: 1rem; line-height: 1.3; font-weight: 600; }
 .paper-content { border-left: 1px solid var(--rule); padding-left: .9rem; }
 .paper-row + .paper-row, .timeline-row + .timeline-row { margin-top: 1rem; }
 .paper-content h3 { font-size: 1rem; }
@@ -108,9 +111,6 @@ main > section > h2, .section-heading { margin-bottom: .8rem; }
   .detail-list dd + dt { margin-top: .5rem; }
   .paper-row { grid-template-columns: 2.35rem minmax(0,1fr); gap: .5rem; }
   .paper-content { padding-left: .6rem; }
-}
-@media (max-width: 440px) {
-  .contact { display: grid; grid-template-columns: max-content 1fr; column-gap: 1.25rem; }
 }
 @media print {
   .page { width: 100%; }
