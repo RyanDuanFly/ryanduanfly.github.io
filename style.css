@@ -37,8 +37,8 @@ a:hover { color: #133d6e; }
   padding: clamp(1.25rem, 2.6vw, 2rem) var(--gutter);
   background: #e4edf6;
 }
-.profile-person { grid-area: person; display: grid; justify-items: center; gap: .7rem; }
-.portrait { width: var(--portrait-size); max-width: 100%; }
+.profile-person { grid-area: person; align-self: stretch; display: grid; grid-template-rows: 1fr auto; justify-items: center; gap: .7rem; }
+.portrait { align-self: center; width: var(--portrait-size); max-width: 100%; }
 .portrait a {
   position: relative;
   display: block;
@@ -55,12 +55,21 @@ a:hover { color: #133d6e; }
   height: auto;
 }
 .identity { display: grid; justify-items: center; gap: .3rem; text-align: center; }
-.energy-note { display: inline-flex; align-items: center; gap: .45rem; max-width: 13.5rem; color: var(--muted); font-size: .84rem; line-height: 1.35; }
+.energy-note { display: inline-flex; align-items: center; gap: .45rem; min-height: 2.75rem; color: var(--muted); font-size: .84rem; line-height: 1.35; }
 .energy-note span { text-align: start; text-wrap: balance; }
 .energy-battery { flex: none; color: var(--blue); }
-.bio { grid-area: bio; max-width: 46rem; }
-.bio > p { font-size: 1rem; line-height: 1.6; }
-.bio p + p { margin-top: .45rem; }
+.bio {
+  grid-area: bio;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .6rem;
+  max-width: 46rem;
+}
+.bio-copy { line-height: 1.6; }
+.bio-copy p + p { margin-top: .45rem; }
 .contact { display: flex; flex-wrap: wrap; justify-content: center; gap: .125rem; list-style: none; padding: 0; }
 .contact a { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 4px; }
 .contact a:hover, .contact a:focus-visible { background-color: #cfdeec; }
@@ -135,8 +144,7 @@ a:hover { color: #133d6e; }
   #teaching > h3:first-of-type { grid-row: 1; }
   #teaching > h2 { grid-column: 1; grid-row: 1 / span 2; }
 }
-@media (max-width: 640px) {
-  .page { --gutter: 1.15rem; }
+@media (max-width: 54rem) {
   .profile {
     --portrait-size: clamp(5.375rem, 23vw, 6.5rem);
     grid-template-columns: minmax(0, 1fr);
@@ -144,6 +152,9 @@ a:hover { color: #133d6e; }
     row-gap: .65rem;
     padding-block: 1.15rem .75rem;
   }
+}
+@media (max-width: 640px) {
+  .page { --gutter: 1.15rem; }
   .timeline-row { grid-template-columns: 4rem minmax(0,1fr); grid-template-areas: "mark date" "mark degree"; gap: .15rem .8rem; }
   .timeline-date { justify-self: start; }
   .detail-list { grid-template-columns: 1fr; gap: .1rem; }
