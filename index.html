@@ -15,8 +15,8 @@
   <title>Rupeng Duan · Power Electronics at UCLA</title>
   <link rel="icon" href="assets/battery.svg" type="image/svg+xml" sizes="any">
   <link rel="stylesheet" href="assets/fonts.css?v=open-sans">
-  <link rel="stylesheet" href="style.css?v=carousel-chevrons">
-  <script src="site.js?v=balanced-research" defer></script>
+  <link rel="stylesheet" href="style.css?v=research-overviews">
+  <script src="site.js?v=research-overviews" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -88,21 +88,11 @@
 
     <section class="content-section" id="research" aria-labelledby="research-title">
       <h2 id="research-title">Research</h2>
-      <div class="research-entry">
-        <details class="research-topic" id="storage-projects">
-          <summary>
-            <strong>Reconfigurable and Balanced Grid-Interactive Battery Energy Storage</strong>
-            <span>Developing grid-forming battery-integrated multilevel converters with high-efficiency partial-power-processing balancing and flexible topology reconfiguration to unlock the power and energy potential of heterogeneous batteries and ensure safe low-voltage ride-through (LVRT).</span>
-          </summary>
-          <div class="project-notes">
-            <section>
-              <h3>Modular multilevel converters for grid-forming battery storage</h3>
-              <p class="project-date">UCLA · Sep 2024 – Sep 2026</p>
-              <p>I developed a hierarchical battery-balancing architecture for cascaded H-bridge inverters. A statistical design approach increased output power capability by 50% relative to earlier methods.</p>
-              <p>My partial-power interconnect converter reached 99% peak efficiency during active balancing and improved current sharing during low-voltage ride-through. I built a 200 W grid-forming prototype with CAN and LVDS interfaces and demonstrated it at IEEE ECCE 2026.</p>
-            </section>
-          </div>
-        </details>
+      <article class="research-entry" id="storage-projects">
+        <div class="research-topic">
+          <h3>Grid-Interactive Battery Energy Storage</h3>
+          <p>Developing grid-forming battery-integrated multilevel converters with high-efficiency partial-power-processing balancing and flexible topology reconfiguration to unlock the power and energy potential of heterogeneous batteries and ensure safe low-voltage ride-through (LVRT).</p>
+        </div>
         <figure class="research-figure" id="storage-figures" aria-label="Battery energy storage project images">
           <div class="research-slides" id="storage-slides">
             <a href="assets/research-ppp-chb.png?v=updated-ppp" aria-label="Open the full-size partial-power interconnect schematic">
@@ -118,37 +108,18 @@
             <button type="button" aria-label="Next research image" aria-controls="storage-slides"></button>
           </div>
         </figure>
-      </div>
-      <div class="research-entry">
-        <details class="research-topic" id="datacenter-projects">
-          <summary>
-            <strong>AI Data Center Power Delivery and Power Smoothing</strong>
-            <span>Developing an electromagnetic transient (EMT) model of AI data center power delivery systems, spanning all power conversion stages from the grid interface to the voltage regulator module, and mitigating AI workload-induced power fluctuations through a hybrid energy buffering. In parallel, designing and building LLC/CLLC resonant converters and totem-pole PFC rectifiers for a prototype AI data center power delivery platform</span>
-          </summary>
-          <div class="project-notes">
-            <section>
-              <h3>Power smoothing under variable GPU loads</h3>
-              <p class="project-date">UCLA · Jun 2026 – present</p>
-              <p>I built an electromagnetic transient model that spans the grid interface through the voltage regulator module. In simulations with time-varying, unbalanced GPU loads, my hybrid battery–supercapacitor buffer reduced power fluctuations by 80% and UPS DC-link voltage oscillations by 96%.</p>
-            </section>
-            <section>
-              <h3>48 V to 12 V resonant conversion</h3>
-              <p class="project-date">UCLA · Sep 2026 – present</p>
-              <p>I am designing a 1 kW CLLC resonant converter for a 48 V to 12 V DC transformer prototype.</p>
-            </section>
-            <section>
-              <h3>Power factor correction for rack power supplies</h3>
-              <p class="project-date">UCLA · Sep 2026 – present</p>
-              <p>I am designing a 1 kW single-phase totem-pole power factor correction converter for a scaled data center rack power supply.</p>
-            </section>
-          </div>
-        </details>
+      </article>
+      <article class="research-entry" id="datacenter-projects">
+        <div class="research-topic">
+          <h3>AI Data Center Power Delivery and Power Smoothing</h3>
+          <p>Developing an electromagnetic transient (EMT) model of AI data center power delivery systems, spanning all power conversion stages from the grid interface to the voltage regulator module, and mitigating AI workload-induced power fluctuations through a hybrid energy buffering. In parallel, designing and building LLC/CLLC resonant converters and totem-pole PFC rectifiers for a prototype AI data center power delivery platform</p>
+        </div>
         <figure class="research-figure">
           <a href="assets/research-aidc-system.png" aria-label="Open the full-size AI data center power delivery schematic">
             <img src="assets/research-aidc-system.png" width="1700" height="663" alt="AI data center power delivery from the grid interface through the UPS to three phases of rack loads.">
           </a>
         </figure>
-      </div>
+      </article>
     </section>
 
     <section id="publications" class="content-section" aria-labelledby="publications-heading">
