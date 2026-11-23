@@ -57,7 +57,7 @@ a.easyScholarDOI { display: none !important; }
   height: auto;
 }
 .identity { display: grid; justify-items: center; gap: .3rem; text-align: center; }
-.energy-note { display: inline-flex; align-items: center; gap: .55rem; min-height: 2.75rem; }
+.energy-note { display: inline-flex; align-items: center; gap: .55rem; }
 .energy-note span { text-align: start; text-wrap: balance; }
 .energy-battery { flex: none; color: var(--blue); }
 .bio {
@@ -69,9 +69,9 @@ a.easyScholarDOI { display: none !important; }
   justify-content: space-between;
   gap: .6rem;
   max-width: 46rem;
+  padding-block-end: .5rem;
   line-height: 1.6;
 }
-.bio-copy p + p { margin-top: .45rem; }
 .contact { display: flex; flex-wrap: wrap; justify-content: center; gap: .125rem; list-style: none; padding: 0; }
 .contact a { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 4px; }
 .contact a:hover, .contact a:focus-visible { background-color: #cfdeec; }
@@ -185,6 +185,7 @@ a.easyScholarDOI { display: none !important; }
   #teaching > h2 { grid-column: 1; grid-row: 1 / span 2; }
 }
 @media (max-width: 54rem) {
+  .bio { padding-block-end: 0; }
   .profile {
     --portrait-size: clamp(5.375rem, 23vw, 6.5rem);
     grid-template-columns: minmax(0, 1fr);
