@@ -85,9 +85,9 @@ a.easyScholarDOI { display: none !important; }
 #research { background: var(--paper); }
 .research-entry { min-width: 0; padding-top: .7rem; border-top: 1px solid var(--rule); }
 .research-entry + .research-entry { margin-top: 1.2rem; }
-.research-figure { margin-top: .65rem; }
-.research-figure > a { display: block; width: fit-content; max-width: 100%; }
-.research-figure img { display: block; width: auto; height: auto; max-width: min(100%, 33rem); max-height: 18rem; mix-blend-mode: multiply; }
+.research-figure { display: flex; flex-direction: column; gap: .9rem; margin-top: .65rem; }
+.research-figure > a { display: block; width: 100%; max-width: 33rem; }
+.research-figure img { display: block; width: 100%; height: auto; }
 .research-topic summary { position: relative; cursor: pointer; list-style: none; line-height: 1.5; }
 .research-topic summary::-webkit-details-marker { display: none; }
 .research-topic summary::after { content: ""; position: absolute; top: .34rem; right: .15rem; width: .5rem; height: .5rem; border: solid var(--blue); border-width: 0 2px 2px 0; transform: rotate(45deg); }
@@ -102,7 +102,6 @@ a.easyScholarDOI { display: none !important; }
   #research > h2 { grid-column: 1 / -1; }
   .research-entry + .research-entry { margin-top: 0; }
   #research:not(:has(details[open])) .research-entry { display: grid; grid-row: span 2; grid-template-rows: subgrid; }
-  .research-figure img { max-width: 100%; max-height: 15rem; }
 }
 .project-date, .timeline-date, .paper-year { color: var(--muted); font-size: .89rem; font-variant-numeric: tabular-nums; }
 .project-notes h3 { margin: .12rem 0 .25rem; }
