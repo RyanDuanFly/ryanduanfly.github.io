@@ -28,7 +28,7 @@ a:hover { color: #133d6e; }
 .skip-link:focus { transform: none; }
 .page { --gutter: max(1.25rem, calc((100% - 65rem) / 2)); }
 .profile {
-  --portrait-size: clamp(11.25rem, calc(17vw + .5rem), 13.25rem);
+  --portrait-size: clamp(9.5rem, 15vw, 10.75rem);
   display: grid;
   grid-template-columns: minmax(0, 1fr) clamp(13.25rem, 24vw, 18rem);
   grid-template-areas: "bio person";
@@ -138,7 +138,7 @@ a:hover { color: #133d6e; }
 @media (max-width: 640px) {
   .page { --gutter: 1.15rem; }
   .profile {
-    --portrait-size: clamp(6rem, 25vw, 7.25rem);
+    --portrait-size: clamp(5.375rem, 23vw, 6.5rem);
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas: "person" "bio";
     row-gap: .65rem;
