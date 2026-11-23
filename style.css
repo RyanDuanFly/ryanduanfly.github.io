@@ -85,9 +85,24 @@ a.easyScholarDOI { display: none !important; }
 #research { background: var(--paper); }
 .research-entry { min-width: 0; padding-top: .7rem; border-top: 1px solid var(--rule); }
 .research-entry + .research-entry { margin-top: 1.2rem; }
-.research-figure { display: flex; flex-direction: column; gap: .9rem; margin-top: .65rem; }
-.research-figure > a { display: block; width: 100%; max-width: 33rem; }
+.research-figure { max-width: 33rem; margin-top: .65rem; }
+.research-figure a { display: block; }
 .research-figure img { display: block; width: 100%; height: auto; }
+.research-slides { display: grid; gap: .9rem; }
+.research-slide-controls { display: flex; justify-content: center; align-items: center; gap: .6rem; margin-top: .35rem; }
+.research-slide-controls[hidden] { display: none; }
+.research-slide-controls button { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; color: var(--blue); background: transparent; border: 1px solid var(--rule); border-radius: 4px; font: inherit; font-size: 1.2rem; cursor: pointer; }
+.research-slide-controls button:hover { background: #e4edf6; }
+.research-slide-status { color: var(--muted); font-size: .86rem; font-variant-numeric: tabular-nums; }
+@media screen {
+  .research-carousel .research-slides { grid-auto-flow: column; grid-auto-columns: 100%; gap: 0; overflow: hidden; }
+  .research-carousel .research-slides a { aspect-ratio: 3 / 2; transform: translateX(var(--slide-offset, 0%)); }
+  .research-carousel .research-slides a:focus-visible { outline-offset: -3px; }
+  .research-carousel .research-slides img { height: 100%; object-fit: contain; }
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  .research-carousel .research-slides a { transition: transform .23s ease; }
+}
 .research-topic summary { position: relative; cursor: pointer; list-style: none; line-height: 1.5; }
 .research-topic summary::-webkit-details-marker { display: none; }
 .research-topic summary::after { content: ""; position: absolute; top: .34rem; right: .15rem; width: .5rem; height: .5rem; border: solid var(--blue); border-width: 0 2px 2px 0; transform: rotate(45deg); }
@@ -167,7 +182,7 @@ a.easyScholarDOI { display: none !important; }
   body, .profile, .content-section { background: white !important; }
   .profile, .content-section { padding-block: .7rem; }
   .portrait a { box-shadow: none; }
-  .section-links, .skip-link { display: none; }
+  .section-links, .skip-link, .research-slide-controls { display: none; }
   .paper-row, .timeline-row, .project-notes section { break-inside: avoid; }
   h2, h3 { break-after: avoid; }
 }

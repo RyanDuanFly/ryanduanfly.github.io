@@ -15,8 +15,8 @@
   <title>Rupeng Duan · Power Electronics at UCLA</title>
   <link rel="icon" href="assets/battery.svg" type="image/svg+xml" sizes="any">
   <link rel="stylesheet" href="assets/fonts.css?v=open-sans">
-  <link rel="stylesheet" href="style.css?v=research-figures">
-  <script src="site.js?v=research-details" defer></script>
+  <link rel="stylesheet" href="style.css?v=research-slides">
+  <script src="site.js?v=research-slides" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -103,13 +103,20 @@
             </section>
           </div>
         </details>
-        <figure class="research-figure">
-          <a href="assets/research-ppp-chb.png" aria-label="Open the full-size partial-power interconnect schematic">
-            <img src="assets/research-ppp-chb.png" width="1700" height="1011" alt="Partial-power interconnects balance battery units feeding cascaded H-bridges and a grid filter.">
-          </a>
-          <a href="assets/research-stages-prototype.png" aria-label="Open the full-size STAGES prototype photo">
-            <img src="assets/research-stages-prototype.png" width="1536" height="1024" loading="lazy" alt="UCLA's STAGES grid energy storage prototype with its circuit boards and inductors.">
-          </a>
+        <figure class="research-figure" id="storage-figures" aria-label="Battery energy storage project images">
+          <div class="research-slides" id="storage-slides">
+            <a href="assets/research-ppp-chb.png" aria-label="Open the full-size partial-power interconnect schematic">
+              <img src="assets/research-ppp-chb.png" width="1700" height="1011" alt="Partial-power interconnects balance battery units feeding cascaded H-bridges and a grid filter.">
+            </a>
+            <a href="assets/research-stages-prototype.png" aria-label="Open the full-size STAGES prototype photo">
+              <img src="assets/research-stages-prototype.png" width="1536" height="1024" loading="lazy" alt="UCLA's STAGES grid energy storage prototype with its circuit boards and inductors.">
+            </a>
+          </div>
+          <div class="research-slide-controls" hidden>
+            <button type="button" aria-label="Previous research image" aria-controls="storage-slides">←</button>
+            <span class="research-slide-status" role="status" aria-atomic="true"></span>
+            <button type="button" aria-label="Next research image" aria-controls="storage-slides">→</button>
+          </div>
         </figure>
       </div>
       <div class="research-entry">
@@ -140,9 +147,6 @@
           <a href="assets/research-aidc-system.png" aria-label="Open the full-size AI data center power delivery schematic">
             <img src="assets/research-aidc-system.png" width="1700" height="663" alt="AI data center power delivery from the grid interface through the UPS to three phases of rack loads.">
           </a>
-          <a href="assets/research-aidc-buffer.png" aria-label="Open the full-size energy buffer schematic">
-            <img src="assets/research-aidc-buffer.png" width="1700" height="515" alt="Hybrid battery and supercapacitor storage with rack-grid and battery-supercapacitor spectral decoupling.">
-          </a>
         </figure>
       </div>
     </section>
@@ -155,7 +159,7 @@
           <div class="paper-content">
             <h3>PPI: Partial-power interconnect for battery-integrated multilevel converters</h3>
             <p class="paper-authors"><strong>R. Duan</strong>, G. Qian, B. Li, and X. Cui</p>
-            <p class="paper-venue">IEEE Energy Conversion Congress and Exposition (ECCE 2026) · Vancouver, Canada · <strong>Oral presentation</strong></p>
+            <p class="paper-venue">IEEE Energy Conversion Congress and Exposition (ECCE) · Vancouver, Canada, 2026 · <strong>Oral presentation</strong></p>
           </div>
         </li>
         <li class="paper-row">
@@ -172,7 +176,7 @@
           <div class="paper-content">
             <h3><a href="https://doi.org/10.1109/COMPEL57166.2025.11121257">Hierarchical partial power processing for second-life battery-integrated grid-connected multilevel inverters</a></h3>
             <p class="paper-authors"><strong>R. Duan</strong> and X. Cui</p>
-            <p class="paper-venue">IEEE Workshop on Control and Modeling for Power Electronics (COMPEL 2025) · Knoxville, USA · pp. 1–8</p>
+            <p class="paper-venue">IEEE Workshop on Control and Modeling for Power Electronics (COMPEL) · Knoxville, USA, 2025 · pp. 1–8</p>
           </div>
         </li>
         <li class="paper-row">
