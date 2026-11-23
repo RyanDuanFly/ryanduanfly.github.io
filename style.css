@@ -55,7 +55,7 @@ a:hover { color: #133d6e; }
   height: auto;
 }
 .identity { display: grid; justify-items: center; gap: .3rem; text-align: center; }
-.energy-note { display: inline-flex; align-items: center; gap: .45rem; min-height: 2.75rem; color: var(--muted); font-size: .84rem; line-height: 1.35; }
+.energy-note { display: inline-flex; align-items: center; gap: .55rem; min-height: 2.75rem; }
 .energy-note span { text-align: start; text-wrap: balance; }
 .energy-battery { flex: none; color: var(--blue); }
 .bio {
@@ -67,13 +67,13 @@ a:hover { color: #133d6e; }
   justify-content: space-between;
   gap: .6rem;
   max-width: 46rem;
+  line-height: 1.6;
 }
-.bio-copy { line-height: 1.6; }
 .bio-copy p + p { margin-top: .45rem; }
 .contact { display: flex; flex-wrap: wrap; justify-content: center; gap: .125rem; list-style: none; padding: 0; }
 .contact a { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 4px; }
 .contact a:hover, .contact a:focus-visible { background-color: #cfdeec; }
-.section-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-inline: var(--gutter); background: var(--navy); font-size: clamp(.6875rem, 3.3vw, .94rem); font-weight: 600; }
+.section-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding-inline: var(--gutter); background: var(--navy); font-size: clamp(.6875rem, 3.3vw, .94rem); font-weight: 600; }
 .section-links a { display: grid; place-items: center; min-height: 2.8rem; color: #f5f8fb; text-align: center; text-decoration: none; overflow-wrap: anywhere; }
 .section-links a + a { border-inline-start: 1px solid #3d5874; }
 .section-links a:hover, .section-links a:focus-visible { background: #254a70; text-decoration: underline; text-underline-offset: .25em; }
@@ -127,7 +127,7 @@ a:hover { color: #133d6e; }
 .school-mark { grid-area: mark; display: block; justify-self: center; align-self: center; width: 100%; height: auto; }
 .school-mark-zju { max-width: 2.8rem; }
 .timeline p { color: var(--muted); margin-top: .2rem; font-size: .94rem; }
-.detail-list { display: grid; grid-template-columns: 10.5rem minmax(0,1fr); gap: .5rem 1rem; align-items: baseline; }
+.detail-list { display: grid; grid-template-columns: 10.5rem minmax(0,1fr); gap: .5rem 1.875rem; align-items: baseline; }
 #teaching > h3 { color: #224c72; padding-top: .8rem; border-top: 1px solid #a4b3c1; }
 #teaching h3 + dl { margin-top: .55rem; }
 #teaching ul { padding-left: 1.25rem; }
