@@ -92,7 +92,27 @@ a.easyScholarDOI { display: none !important; }
 .research-carousel { position: relative; }
 .research-slide-controls { position: absolute; inset: 0; display: flex; justify-content: space-between; align-items: center; padding-inline: .35rem; pointer-events: none; }
 .research-slide-controls[hidden] { display: none; }
-.research-slide-controls button { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; color: var(--navy); background: rgb(218 223 228 / 65%); border: 0; border-radius: 50%; font: inherit; font-size: 1.25rem; cursor: pointer; pointer-events: auto; }
+.research-slide-controls button {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  color: var(--navy);
+  background: rgb(218 223 228 / 65%);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.research-slide-controls button::before {
+  content: "";
+  width: .75rem;
+  height: 1rem;
+  background: currentColor;
+  clip-path: polygon(0 13%, 25% 0, 100% 50%, 25% 100%, 0 87%, 57% 50%);
+}
+.research-slide-controls button:first-child::before { transform: scaleX(-1); }
 .research-slide-controls button:hover, .research-slide-controls button:focus-visible { background: rgb(218 223 228 / 92%); }
 .research-slide-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 @media screen {
