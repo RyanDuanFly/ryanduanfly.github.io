@@ -38,11 +38,9 @@ a:hover { color: #133d6e; }
 .portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 28%; border-radius: 3px; }
 .portrait figcaption { color: var(--muted); font-size: .8rem; line-height: 1.35; margin-top: .4rem; }
 .identity { grid-area: identity; align-self: end; }
-.affiliation { margin-top: .35rem; color: #354c65; font-weight: 550; line-height: 1.4; }
 .bio { grid-area: bio; align-self: start; }
 .bio p + p { margin-top: .65rem; }
 .contact { display: flex; flex-wrap: wrap; gap: .4rem 1rem; list-style: none; padding: 0; margin-top: .95rem; font-size: .94rem; }
-.contact a:not([href]) { color: #626b75; text-decoration: none; }
 .section-links { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 1.5rem; padding: .45rem 1rem; background: #f1f5f9; border-left: 3px solid var(--blue); font-size: .94rem; }
 .section-links a { display: inline-block; padding: .2rem 0; text-decoration: none; }
 .section-links a:hover, .section-links a:focus-visible { text-decoration: underline; }
@@ -104,7 +102,6 @@ main > section > h2, .section-heading { margin-bottom: .8rem; }
   .identity { align-self: center; }
   .portrait figcaption { font-size: .75rem; }
   h1 { font-size: clamp(1.9rem, 7vw, 2.45rem); }
-  .affiliation { font-size: .95rem; }
   .section-links { column-gap: .95rem; padding-inline: .7rem; }
   main > section { margin-top: 1.55rem; }
   .timeline-row, .detail-list { grid-template-columns: 1fr; gap: .1rem; }
