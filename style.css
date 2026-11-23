@@ -70,7 +70,7 @@ a.easyScholarDOI { display: none !important; }
   gap: .6rem;
   max-width: 46rem;
   padding-block-end: .5rem;
-  line-height: 1.6;
+  line-height: 1.68;
 }
 .contact { display: flex; flex-wrap: wrap; justify-content: center; gap: .125rem; list-style: none; padding: 0; }
 .contact a { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 4px; }
@@ -124,8 +124,8 @@ a.easyScholarDOI { display: none !important; }
 @media screen and (prefers-reduced-motion: no-preference) {
   .research-carousel .research-slides a { transition: transform .23s ease; }
 }
-.research-topic h3 { color: var(--blue); font-size: 1.12rem; font-weight: 700; line-height: 1.35; }
-.research-topic p { margin-top: .3rem; font-size: .94rem; line-height: 1.5; }
+.research-topic h3 { color: var(--blue); font-size: 1.12rem; font-weight: 700; line-height: 1.42; }
+.research-topic p { margin-top: .3rem; font-size: .94rem; line-height: 1.6; }
 @media screen and (min-width: 56rem) {
   #research { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(1.4rem, 2.6vw, 2.4rem); }
   #research > h2 { grid-column: 1 / -1; }
@@ -152,10 +152,10 @@ a.easyScholarDOI { display: none !important; }
 .paper-row, .timeline-row { display: grid; padding-block: .75rem; border-bottom: 1px solid #c4cdd3; }
 .paper-row { grid-template-columns: 4ch minmax(0,1fr); gap: 1.2rem; align-items: baseline; }
 .paper-year { color: #405f79; font-weight: 700; font-size: .94rem; }
-.paper-content h3 { font-size: 1.05rem; line-height: 1.4; }
+.paper-content h3 { font-size: 1.05rem; line-height: 1.48; }
 .paper-content h3 a { color: #224c72; text-decoration: none; }
 .paper-content h3 a:hover, .paper-content h3 a:focus-visible { text-decoration: underline; }
-.paper-authors, .paper-venue { font-size: .94rem; line-height: 1.45; }
+.paper-authors, .paper-venue { font-size: .94rem; line-height: 1.55; }
 .paper-authors { margin-top: .18rem; }
 .paper-venue { color: var(--muted); }
 .paper-award { margin-top: .35rem; padding-inline-start: .55rem; border-inline-start: 3px solid #7b9bbd; font-size: .92rem; }
