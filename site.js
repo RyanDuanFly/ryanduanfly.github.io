@@ -16,22 +16,23 @@ if (storageFigures) {
     status.textContent = slides[activeSlide].querySelector("img").alt;
   }
 
-  function moveSlide(direction) {
+  function moveSlide(step) {
     slideAnimations.forEach(animation => animation.cancel());
     slideAnimations = [];
     const outgoingSlide = slides[activeSlide];
-    showSlide(activeSlide + direction);
+    showSlide(activeSlide + step);
     if (!animateSlides.matches) return;
 
     const incomingSlide = slides[activeSlide];
+    const incomingOffset = step * 100;
     const timing = { duration: 230, easing: "ease" };
     slideAnimations = [
       outgoingSlide.animate([
         { transform: "translateX(0)", visibility: "visible" },
-        { transform: `translateX(${direction * 100}%)`, visibility: "visible" },
+        { transform: `translateX(${-incomingOffset}%)`, visibility: "visible" },
       ], timing),
       incomingSlide.animate([
-        { transform: `translateX(${-direction * 100}%)` },
+        { transform: `translateX(${incomingOffset}%)` },
         { transform: "translateX(0)" },
       ], timing),
     ];
