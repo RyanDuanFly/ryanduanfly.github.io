@@ -116,13 +116,11 @@ a.easyScholarDOI { display: none !important; }
 .research-slide-controls button:hover, .research-slide-controls button:focus-visible { background: rgb(218 223 228 / 92%); }
 .research-slide-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 @media screen {
-  .research-carousel .research-slides { grid-auto-flow: column; grid-auto-columns: 100%; gap: 0; overflow: hidden; }
-  .research-carousel .research-slides a { aspect-ratio: 3 / 2; transform: translateX(var(--slide-offset, 0%)); }
+  .research-carousel .research-slides { grid-template-columns: minmax(0, 1fr); gap: 0; overflow: hidden; }
+  .research-carousel .research-slides a { grid-area: 1 / 1; aspect-ratio: 3 / 2; }
+  .research-carousel .research-slides a[inert] { visibility: hidden; }
   .research-carousel .research-slides a:focus-visible { outline-offset: -3px; }
   .research-carousel .research-slides img { height: 100%; object-fit: contain; }
-}
-@media screen and (prefers-reduced-motion: no-preference) {
-  .research-carousel .research-slides a { transition: transform .23s ease; }
 }
 .research-topic h3 { color: var(--blue); font-size: 1.12rem; font-weight: 700; line-height: 1.42; }
 .research-topic p { margin-top: .3rem; font-size: .94rem; line-height: 1.6; }

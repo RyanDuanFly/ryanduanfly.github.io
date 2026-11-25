@@ -4,19 +4,41 @@ if (storageFigures) {
   const controls = storageFigures.querySelector(".research-slide-controls");
   const status = controls.querySelector(".research-slide-status");
   const [previousButton, nextButton] = controls.querySelectorAll("button");
+  const animateSlides = window.matchMedia("screen and (prefers-reduced-motion: no-preference)");
   let activeSlide = 0;
+  let slideAnimations = [];
 
   function showSlide(index) {
     activeSlide = (index + slides.length) % slides.length;
-    storageFigures.style.setProperty("--slide-offset", `${-100 * activeSlide}%`);
     slides.forEach((slide, slideIndex) => {
       slide.inert = slideIndex !== activeSlide;
     });
     status.textContent = slides[activeSlide].querySelector("img").alt;
   }
 
-  previousButton.addEventListener("click", () => showSlide(activeSlide - 1));
-  nextButton.addEventListener("click", () => showSlide(activeSlide + 1));
+  function moveSlide(direction) {
+    slideAnimations.forEach(animation => animation.cancel());
+    slideAnimations = [];
+    const outgoingSlide = slides[activeSlide];
+    showSlide(activeSlide + direction);
+    if (!animateSlides.matches) return;
+
+    const incomingSlide = slides[activeSlide];
+    const timing = { duration: 230, easing: "ease" };
+    slideAnimations = [
+      outgoingSlide.animate([
+        { transform: "translateX(0)", visibility: "visible" },
+        { transform: `translateX(${direction * 100}%)`, visibility: "visible" },
+      ], timing),
+      incomingSlide.animate([
+        { transform: `translateX(${-direction * 100}%)` },
+        { transform: "translateX(0)" },
+      ], timing),
+    ];
+  }
+
+  previousButton.addEventListener("click", () => moveSlide(-1));
+  nextButton.addEventListener("click", () => moveSlide(1));
   storageFigures.classList.add("research-carousel");
   showSlide(0);
   controls.hidden = false;
